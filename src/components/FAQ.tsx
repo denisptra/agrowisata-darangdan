@@ -32,29 +32,29 @@ const FAQ = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-br from-green-50 to-yellow-50 px-16">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#88B04B] mb-4 font-poppins">
+    <section className="py-10 md:py-16 bg-gradient-to-br from-green-50 to-yellow-50 px-4 sm:px-6 md:px-16">
+      <div className="container mx-auto px-0 sm:px-4">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#88B04B] mb-3 md:mb-4 font-poppins">
             Pertanyaan yang Sering Diajukan
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto font-nunito text-lg">
+          <p className="text-gray-600 max-w-full sm:max-w-2xl mx-auto font-nunito text-base sm:text-lg">
             Temukan jawaban atas pertanyaan umum tentang Agrowisata Darangdan
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto space-y-4">
+        <div className="max-w-full sm:max-w-2xl md:max-w-3xl mx-auto space-y-3 sm:space-y-4">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+              className="bg-white rounded-xl sm:rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden"
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full px-6 py-4 text-left focus:outline-none focus:ring-2 focus:ring-[#88B04B] focus:ring-opacity-50"
+                className="w-full px-4 sm:px-6 py-3 sm:py-4 text-left focus:outline-none focus:ring-2 focus:ring-[#88B04B] focus:ring-opacity-50"
               >
                 <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-semibold text-gray-800 font-poppins">
+                  <h3 className="text-base sm:text-lg font-semibold text-gray-800 font-poppins">
                     {faq.question}
                   </h3>
                   {openIndex === index ? (
@@ -66,8 +66,8 @@ const FAQ = () => {
               </button>
               
               {openIndex === index && (
-                <div className="px-6 pb-6">
-                  <p className="text-gray-600 leading-relaxed font-nunito">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6">
+                  <p className="text-gray-600 leading-relaxed font-nunito text-sm sm:text-base">
                     {faq.answer}
                   </p>
                 </div>
@@ -77,19 +77,19 @@ const FAQ = () => {
         </div>
 
         {/* Contact CTA */}
-        <div className="mt-12 text-center">
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-[#88B04B] mb-4 font-poppins">
+        <div className="mt-8 md:mt-12 text-center">
+          <div className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-8 shadow-lg">
+            <h3 className="text-xl sm:text-2xl font-bold text-[#88B04B] mb-3 sm:mb-4 font-poppins">
               Masih Ada Pertanyaan?
             </h3>
-            <p className="text-gray-600 mb-6 font-nunito">
+            <p className="text-gray-600 mb-4 sm:mb-6 font-nunito text-sm sm:text-base">
               Jangan ragu untuk menghubungi kami langsung via WhatsApp
             </p>
             <a
               href="https://wa.me/6281234567890?text=Halo%20Agrowisata%20Darangdan%2C%20saya%20ingin%20bertanya%20tentang%20kunjungan."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-[#88B04B] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7a9e42] transition-colors duration-300 font-nunito"
+              className="inline-flex items-center bg-[#88B04B] text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full font-semibold hover:bg-[#7a9e42] transition-colors duration-300 font-nunito text-sm sm:text-base"
             >
               Hubungi Kami
             </a>

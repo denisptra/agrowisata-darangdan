@@ -1,4 +1,3 @@
-import React from 'react';
 import { Check, MessageCircle, Users, GraduationCap, UsersRound } from 'lucide-react';
 
 const Packages = () => {
@@ -30,18 +29,18 @@ const Packages = () => {
   ];
 
   return (
-    <section id="packages" className="py-16 px-16 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#88B04B] mb-4 font-poppins">
+    <section id="packages" className="py-8 px-4 md:py-16 md:px-8 bg-white">
+      <div className="container mx-auto px-2 md:px-4">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#88B04B] mb-3 md:mb-4 font-poppins">
             Paket & Harga
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto font-nunito text-lg">
+          <p className="text-gray-600 max-w-xl mx-auto font-nunito text-base md:text-lg">
             Pilih paket yang sesuai dengan kebutuhan kunjungan Anda
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
           {packages.map((pkg, index) => (
             <div
               key={index}
@@ -50,25 +49,25 @@ const Packages = () => {
               }`}
             >
               {pkg.popular && (
-                <div className="absolute top-0 right-0 bg-[#FFCB05] text-white px-4 py-2 rounded-bl-lg">
-                  <span className="text-sm font-semibold font-nunito">Paling Populer</span>
+                <div className="absolute top-0 right-0 bg-[#FFCB05] text-white px-3 py-1 md:px-4 md:py-2 rounded-bl-lg">
+                  <span className="text-xs md:text-sm font-semibold font-nunito">Paling Populer</span>
                 </div>
               )}
 
-              <div className={`${pkg.color} p-6 text-white`}>
-                <div className="flex items-center justify-between mb-4">
-                  <pkg.icon className="h-8 w-8" />
+              <div className={`${pkg.color} p-4 md:p-6 text-white`}>
+                <div className="flex items-center justify-between mb-3 md:mb-4">
+                  <pkg.icon className="h-7 w-7 md:h-8 md:w-8" />
                 </div>
-                <h3 className="text-xl font-bold mb-2 font-poppins">{pkg.title}</h3>
-                <p className="text-2xl font-bold font-nunito">{pkg.price}</p>
+                <h3 className="text-lg md:text-xl font-bold mb-1 md:mb-2 font-poppins">{pkg.title}</h3>
+                <p className="text-lg md:text-2xl font-bold font-nunito">{pkg.price}</p>
               </div>
 
-              <div className="p-6">
-                <ul className="space-y-3 mb-6">
+              <div className="p-4 md:p-6">
+                <ul className="space-y-2 md:space-y-3 mb-4 md:mb-6">
                   {pkg.facilities.map((facility, idx) => (
-                    <li key={idx} className="flex items-center space-x-3">
-                      <Check className="h-5 w-5 text-[#88B04B] flex-shrink-0" />
-                      <span className="text-gray-700 font-nunito">{facility}</span>
+                    <li key={idx} className="flex items-center space-x-2 md:space-x-3">
+                      <Check className="h-4 w-4 md:h-5 md:w-5 text-[#88B04B] flex-shrink-0" />
+                      <span className="text-gray-700 font-nunito text-sm md:text-base">{facility}</span>
                     </li>
                   ))}
                 </ul>
@@ -77,9 +76,9 @@ const Packages = () => {
                   href="https://wa.me/81218795266?text=Halo%20Agrowisata%20Darangdan%2C%20saya%20ingin%20reservasi%20paket%20."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-[#88B04B] text-white py-3 rounded-full hover:bg-[#7a9e42] transition-colors duration-300 flex items-center justify-center space-x-2 font-nunito font-semibold"
+                  className="w-full bg-[#88B04B] text-white py-2 md:py-3 rounded-full hover:bg-[#7a9e42] transition-colors duration-300 flex items-center justify-center space-x-2 font-nunito font-semibold text-sm md:text-base"
                 >
-                  <MessageCircle className="h-5 w-5" />
+                  <MessageCircle className="h-4 w-4 md:h-5 md:w-5" />
                   <span>Reservasi via WhatsApp</span>
                 </a>
               </div>
@@ -87,19 +86,19 @@ const Packages = () => {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <div className="bg-gradient-to-r from-[#88B04B] to-[#FFCB05] p-8 rounded-2xl text-white">
-            <h3 className="text-2xl font-bold mb-4 font-poppins">Butuh Paket Khusus?</h3>
-            <p className="text-lg mb-6 font-nunito">
+        <div className="mt-8 md:mt-12 text-center">
+          <div className="bg-gradient-to-r from-[#88B04B] to-[#FFCB05] p-5 md:p-8 rounded-2xl text-white">
+            <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-4 font-poppins">Butuh Paket Khusus?</h3>
+            <p className="text-base md:text-lg mb-4 md:mb-6 font-nunito">
               Hubungi kami untuk paket kustomisasi sesuai kebutuhan grup Anda
             </p>
             <a
               href="https://wa.me/81218795266?text=Halo%20Agrowisata%20Darangdan%2C%20saya%20ingin%20konsultasi%20paket%20khusus."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-white text-[#88B04B] px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300 font-nunito"
+              className="inline-flex items-center bg-white text-[#88B04B] px-4 md:px-6 py-2 md:py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300 font-nunito text-sm md:text-base"
             >
-              <MessageCircle className="h-5 w-5 mr-2" />
+              <MessageCircle className="h-4 w-4 md:h-5 md:w-5 mr-1 md:mr-2" />
               Konsultasi Gratis
             </a>
           </div>

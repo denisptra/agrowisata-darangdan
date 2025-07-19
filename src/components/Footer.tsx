@@ -4,16 +4,16 @@ import logo from '../images/logo-agrowisata.svg';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12 px-16">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8">
+    <footer className="bg-gray-900 text-white py-8 px-4 md:py-12 md:px-8 lg:px-16">
+      <div className="container mx-auto px-2 md:px-4">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <img src={logo} className='w-10' alt="" />
-              <h3 className="text-xl font-bold font-poppins">Agrowisata Darangdan</h3>
+              <img src={logo} className="w-10" alt="" />
+              <h3 className="text-lg md:text-xl font-bold font-poppins">Agrowisata Darangdan</h3>
             </div>
-            <p className="text-gray-400 font-nunito text-justify">
+            <p className="text-gray-400 font-nunito text-justify text-sm md:text-base">
               Tempat wisata edukasi pertanian yang mengedepankan nilai-nilai edukatif,
               natural, dan kekeluargaan di Purwakarta.
             </p>
@@ -21,25 +21,25 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold font-poppins">Navigasi</h4>
+            <h4 className="text-base md:text-lg font-semibold font-poppins">Navigasi</h4>
             <ul className="space-y-2 font-nunito">
               <li>
-                <a href="#about" className="text-gray-400 hover:text-[#88B04B] transition-colors">
+                <a href="#about" className="text-gray-400 hover:text-[#88B04B] transition-colors text-sm md:text-base">
                   Tentang Kami
                 </a>
               </li>
               <li>
-                <a href="#packages" className="text-gray-400 hover:text-[#88B04B] transition-colors">
+                <a href="#packages" className="text-gray-400 hover:text-[#88B04B] transition-colors text-sm md:text-base">
                   Paket & Harga
                 </a>
               </li>
               <li>
-                <a href="#education" className="text-gray-400 hover:text-[#88B04B] transition-colors">
+                <a href="#education" className="text-gray-400 hover:text-[#88B04B] transition-colors text-sm md:text-base">
                   Edukasi Pertanian
                 </a>
               </li>
               <li>
-                <a href="#gallery" className="text-gray-400 hover:text-[#88B04B] transition-colors">
+                <a href="#gallery" className="text-gray-400 hover:text-[#88B04B] transition-colors text-sm md:text-base">
                   Galeri
                 </a>
               </li>
@@ -48,32 +48,32 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold font-poppins">Kontak</h4>
+            <h4 className="text-base md:text-lg font-semibold font-poppins">Kontak</h4>
             <div className="space-y-3 font-nunito">
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-[#88B04B]" />
-                <span className="text-gray-400">Darangdan, Purwakarta</span>
+                <span className="text-gray-400 text-sm md:text-base">Darangdan, Purwakarta</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Clock className="h-5 w-5 text-[#88B04B]" />
-                <span className="text-gray-400">09.00 - 16.00 WIB</span>
+                <span className="text-gray-400 text-sm md:text-base">09.00 - 16.00 WIB</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MessageCircle className="h-5 w-5 text-[#88B04B]" />
-                <span className="text-gray-400">+62 812-1879-5266</span>
+                <span className="text-gray-400 text-sm md:text-base">+62 812-1879-5266</span>
               </div>
             </div>
           </div>
 
           {/* Social Media */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold font-poppins">Media Sosial</h4>
-            <div className="flex space-x-4">
+            <h4 className="text-base md:text-lg font-semibold font-poppins">Media Sosial</h4>
+            <div className="flex space-x-3 md:space-x-4">
               <a
                 href="https://wa.me/81218795266?text=Halo%20Agrowisata%20Darangdan%2C%20saya%20ingin%20reservasi%20paket%20$"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 p-3 rounded-full hover:bg-green-600 transition-colors"
+                className="bg-green-500 p-2 md:p-3 rounded-full hover:bg-green-600 transition-colors"
               >
                 <MessageCircle className="h-5 w-5" />
               </a>
@@ -81,7 +81,7 @@ const Footer = () => {
                 href="https://instagram.com/agrowisatadarangdan"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-purple-500 to-pink-500 p-3 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all"
+                className="bg-gradient-to-r from-purple-500 to-pink-500 p-2 md:p-3 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all"
               >
                 <Instagram className="h-5 w-5" />
               </a>
@@ -89,7 +89,7 @@ const Footer = () => {
                 href="https://www.tiktok.com/@agrowisata.darangdan"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black p-3 rounded-full hover:bg-gray-800 transition-colors flex items-center justify-center"
+                className="bg-black p-2 md:p-3 rounded-full hover:bg-gray-800 transition-colors flex items-center justify-center"
               >
                 {/* TikTok SVG icon */}
                 <svg
@@ -102,14 +102,14 @@ const Footer = () => {
                 </svg>
               </a>
             </div>
-            <p className="text-gray-400 text-sm font-nunito">
+            <p className="text-gray-400 text-xs md:text-sm font-nunito">
               Follow media sosial kami untuk update terbaru!
             </p>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-gray-400 font-nunito">
+        <div className="border-t border-gray-800 mt-8 pt-6 md:pt-8 text-center">
+          <p className="text-gray-400 font-nunito text-xs md:text-sm">
             © 2025 Agrowisata Darangdan. All rights reserved.
           </p>
         </div>

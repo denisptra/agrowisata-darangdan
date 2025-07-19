@@ -56,7 +56,7 @@ const Hero = () => {
           </div>
           <div className="bg-white/20 backdrop-blur-md rounded-lg px-4 py-2 flex items-center space-x-2">
             <Clock className="h-5 w-5 text-[#FFCB05]" />
-            <span className="text-white font-manrope">Senin - Minggu, 09.00 - 16.00 WIB, Jumat-TUTUP</span>
+            <span className="text-white font-manrope">09.00 - 16.00 WIB, Jumat-TUTUP</span>
           </div>
         </div>
         <a
@@ -65,7 +65,7 @@ const Hero = () => {
           rel="noopener noreferrer"
           className="inline-flex items-center bg-[#88B04B] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#7a9e42] transition-all duration-300 transform hover:scale-105 animate-pulse font-manrope"
         >
-          Reservasi Sekarang via WhatsApp
+          Reservasi via WhatsApp
           <ArrowRight className="ml-2 h-5 w-5" />
         </a>
       </div>
